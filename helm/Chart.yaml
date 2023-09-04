@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ubuntu-python3
+description: A Helm chart for my Python application
+version: 0.1.0
+

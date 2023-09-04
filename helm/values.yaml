@@ -1,0 +1,6 @@
+image:
+  name: ubuntu_python3
+  tag: latest
+replicas: 3
+author: "DolaanPython"
+type: ClucterBomBomIP
