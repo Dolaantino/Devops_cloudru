@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: ubuntu-python3-app
-        image: ubuntu_python3:latest
-        #imagePullPolicy: Never
+        image: docker.io/rhonakia/ubuntu_python3:latest
         env:
             - name: UUID
               valueFrom:
@@ -23,11 +22,12 @@ spec:
                   fieldPath: metadata.uid
         ports:
         - containerPort: 8000
-        readinessProbe:
-            httpGet:
-              path: /healthz
-              port: 8000
-        livenessProbe:
-            httpGet:
-              path: /healthz
-              port: 8000
+        imagePullPolicy: Always
+  #      readinessProbe:
+   #         httpGet:
+    #          path: /healthz
+     #         port: 8000
+      #  livenessProbe:
+       #     httpGet:
+        #      path: /healthz
+         #     port: 8000
