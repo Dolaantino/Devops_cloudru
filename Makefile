@@ -9,7 +9,7 @@ run:
 # Задача для сборки Docker-образа
 docker:
 	cd app
-	docker build -t ubuntu_python3
+	docker build -t ubuntu_python3 .
 
 # Задача для запуска Docker контейнера
 docker_run:
